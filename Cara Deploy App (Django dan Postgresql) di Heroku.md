@@ -120,6 +120,7 @@ DATABASES['default'].update(db_from_env)
 ```
 konfigurasi file static, tambahkan baris berikut ini
 ```
+STATIC_URL = '/static/' 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ```
