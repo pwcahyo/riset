@@ -14,7 +14,7 @@ WITH (
   OIDS=FALSE
 );
 ```
-- **serial** serial adalah data type auto increment
+- **serial** adalah data type auto increment
 
 ## create sequence untuk autoincrement
 ```
