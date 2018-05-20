@@ -182,7 +182,7 @@ kemudian jalankan
 heroku open
 ```
 maka akan membuka browser dan menjalankan aplikasi django, untuk menuju admin tambahkan **/admin** dibelakang **url**
-
+![halaman admin](https://tutorial.djangogirls.org/en/django_admin/images/login_page2.png)
 untuk melihat log dapat dilakukan dengan cara
 ```
 heroku logs --tail
