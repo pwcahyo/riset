@@ -1,0 +1,13 @@
+#heroku remote
+heroku git:remote -a falling-wind-1624
+
+#heroku push and pull
+heroku keys:add
+
+#database url
+Created postgresql-flexible-35614 as DATABASE_URL
+
+#fix pipenv
+#add this in .bash_profile
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
