@@ -25,7 +25,7 @@ agar database postgresql dapat dijalankan, maka perlu menambahkan addons didalam
 ```
 heroku addons:create heroku-postgresql:hobby-dev
 ```
-**hobby-dev** adalah free paket untuk postgresql didalam heroku *nama tersebut jangan diubah* apabila berhasil maka akan muncul
+**hobby-dev** adalah free paket untuk postgresql didalam heroku, *nama tersebut jangan diubah*, apabila berhasil maka akan muncul
 ```
 Creating heroku-postgresql:hobby-dev on ⬢ sheltered-mountain-39240... free
 Database has been created and is available
@@ -33,7 +33,6 @@ Database has been created and is available
  ! data from another database with pg:copy
 Created postgresql-flexible-35614 as DATABASE_URL
 Use heroku addons:docs heroku-postgresql to view documentation
-Copy
 ```
 **postgresql-flexible-35614** perlu dicatat, digunakan untuk konfigurasi database distep selanjutnya
 
@@ -126,6 +125,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ```
 
 ### 10. Push seluruh file aplikasi django yang sudah dibuat ke dalam heroku
+Untuk push direpository heroku dapat dilakukan dengan cara
 ```
 git push heroku master
 ```
