@@ -67,14 +67,14 @@ installasi dapat menggunakan pip, sebagai berikut:
 ```
 pip install pipenv
 ```
-test apakah pipenv berjalan dengan mengetikan `pipenv` di terminal, apabila tidak dikenali maka tambahkan baris dibawah ini didalam `.bash_profile`
+test apakah `pipenv` berjalan dengan normal, ketikan `pipenv` di terminal, apabila tidak dikenali, tambahkan baris dibawah ini kedalam `.bash_profile`
 ```
 export PATH="/Users/[nama user]/.local/bin:$PATH"
 ```
 **[nama user]** diganti dengan nama user pengguna laptop. 
 
 ### 8. Menciptakan virtual environment untuk upload kedalam heroku
-apabila **Pipenv** sudah dikenali maka lanjutkan dengan cara masuk kedalam direktori *root* aplikasi django, kemudian jalankan perintah berikut.
+apabila **Pipenv** sudah dikenali, maka lanjutkan dengan cara masuk kedalam direktori *root* aplikasi django, kemudian jalankan perintah berikut.
 ```
 pipenv --three
 pipenv install
