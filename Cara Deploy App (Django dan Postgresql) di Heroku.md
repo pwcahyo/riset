@@ -123,6 +123,10 @@ konfigurasi file static, tambahkan baris berikut ini
 STATIC_URL = '/static/' 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 ```
 
 ### 10. Push seluruh file aplikasi django yang sudah dibuat ke dalam heroku
@@ -154,6 +158,20 @@ kemudian jalankan migrasi
 heroku run python manage.py migrate
 ```
 
+### 12. Ciptakan superuser untuk django admin
+menciptakan super user django admin
+```
+heroku run python manage.py createsuperuser
+```
+masukan username dan password
+```
+Username (leave blank to use 'u23814'): pwcahyo
+Email address: pwcahyo@gmail.com
+Password: 
+Password (again): 
+Superuser created successfully.
+```
+
 ### 12. Menjalankan django di heroku
 bangkitkan dyno untuk mengaktifkan server
 ```
@@ -163,7 +181,9 @@ kemudian jalankan
 ```
 heroku open
 ```
-maka akan membuka browser dan menjalankan aplikasi django, untuk melihat log dapat dilakukan dengan cara
+maka akan membuka browser dan menjalankan aplikasi django, untuk menuju admin tambahkan **/admin** dibelakang **url**
+
+untuk melihat log dapat dilakukan dengan cara
 ```
 heroku logs --tail
 ```
@@ -173,4 +193,4 @@ django dapat dijalankan juga di local, dengan perintah:
 ```
 heroku local web
 ```
-kemudian jalankan pada host **http://0.0.0.0:5000**
+kemudian jalankan pada host **http://0.0.0.0:5000/admin**
