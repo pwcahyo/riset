@@ -1,15 +1,16 @@
 # Cara deploy django dan postgresql di heroku
 ### 1. Mempunyai akun di heroku, [register disini](heroku.com)
 
-### 2. Pastikan telah melakukan installasi [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) __apabila sudah terinstall silahkan login dengan cara__
+### 2. Pastikan telah melakukan installasi [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) 
+*apabila sudah terinstall silahkan login dengan cara sebagai berikut*
 ```
 heroku login
 ```
 masukan alamat email dan password akun heroku
 
-### 3. Ciptakan app dengan cara
+### 3. Ciptakan app didalam heroku
 ```
-heroku-create
+heroku create
 ```
 secara otomatis heroku akan menciptakan app dengan nama randomize, contoh apabila create berhasil:
 ```
@@ -24,9 +25,34 @@ agar database postgresql dapat dijalankan, maka perlu menambahkan addons didalam
 ```
 heroku addons:create heroku-postgresql:hobby-dev
 ```
-**hobby-dev** adalah free paket untuk postgresql didalam heroku __nama tersebut jangan diubah__
+**hobby-dev** adalah free paket untuk postgresql didalam heroku *nama tersebut jangan diubah*
 
-### 5. 
+### 5. Ciptakan satu file dengan nama **Pipfile** didalam *root* app
+file ini digunakan untuk mendefinisikan requirement yang dibutuhkan pada server heroku nantinya, isi **Pipfile** adalah sebagai berikut:
+```
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dj-database-url = "*"
+django = "*"
+gunicorn = "*"
+psycopg2 = "*"
+whitenoise = "*"
+
+[requires]
+python_version = "3.6"
+```
+
+### 6. Ciptakan satu file dengan nama **Procfile** didalam *root* app
+file ini nantinya digunakan untuk menjalankan module app yang dideploy didalam server heroku, isi file **Procfile** adalah sebagai berikut
+```
+web: gunicorn smsgateway.wsgi --log-file -
+```
+*smsgateway* adalah aplikasi django yang kita buat, **bukan nama app di heroku** dengan contoh app name sebelumnya adalah ~~sheltered-mountain-39240~~
+
 **Hal yang sangat penting** heroku akan me__reject__ push app
 heroku akan mereject push app apabila tidak melakukan setting dari awal mengenai requirement 
 
