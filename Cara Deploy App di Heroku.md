@@ -1,5 +1,7 @@
 # Cara deploy aplikasi di heroku
-1. Pastikan telah melakukan installasi `Pipenv`
+### Mempunyai akun di heroku, [register disini](heroku.com)
+
+### Pastikan telah melakukan installasi `Pipenv`
 ```
 pip install pipenv
 ```
