@@ -86,7 +86,7 @@ tambahkan baris dibawah ini kedalam `.bash_profile` **apabila menggunakan mac os
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
-apabila sudah maka jangan lupa untuk ulangi [perintah ini](#8-Menciptakan-virtual-environtment-untuk-upload-kedalam-heroku)
+apabila sudah maka jangan lupa untuk ulangi [perintah ini](#8-menciptakan-virtual-environment-untuk-upload-kedalam-heroku)
 kemudian jalankan **pipenv shell**
 ```
 pipenv shell
@@ -111,7 +111,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware,' #tambahkan baris ini
+    'whitenoise.middleware.WhiteNoiseMiddleware', #tambahkan baris ini
 ]
 ```
 konfigurasi untuk database, tambahkan baris berikut dibawah config **DATABASE** yang sudah ada
@@ -172,3 +172,4 @@ django dapat dijalankan juga di local, dengan perintah:
 ```
 heroku local web
 ```
+kemudian jalankan pada host **http://0.0.0.0:5000**
