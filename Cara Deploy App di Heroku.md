@@ -141,7 +141,7 @@ error tersebut dikarenakan belum ditambahkan *git remote* , maka tambahkan denga
 ```
 git remote add heroku https://git.heroku.com/sheltered-mountain-39240.git
 ```
-pastikan **sheltered-mountain-39240** adalah nama repository app didalam heroku, kemudian jangan lupa [ulangi](#8.-Push-seluruh-file-aplikasi-django-yang-sudah-dibuat-ke-dalam-heroku)
+pastikan **sheltered-mountain-39240** adalah nama repository app didalam heroku, kemudian jangan lupa [ulangi](#10.-Push-seluruh-file-aplikasi-django-yang-sudah-dibuat-ke-dalam-heroku)
 
 ### 11. Migrasi database postgresql
 Siapkan database untuk dimigrasi, dengan menjalankan perintah berikut
