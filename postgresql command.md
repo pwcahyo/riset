@@ -1,3 +1,20 @@
+## create table
+```
+CREATE TABLE sentbox
+(
+  id serial,
+  date date,
+  "time" time without time zone,
+  text text,
+  id_message integer NOT NULL,
+  "number" character(25),
+  CONSTRAINT "primary_key id_pesan" PRIMARY KEY (id_message)
+)
+WITH (
+  OIDS=FALSE
+);
+```
+
 ## create sequence untuk autoincrement
 ```
 CREATE SEQUENCE autoincr_sentbox MINVALUE 1;
