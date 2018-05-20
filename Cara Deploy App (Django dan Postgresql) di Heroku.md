@@ -172,7 +172,7 @@ Password (again):
 Superuser created successfully.
 ```
 
-### 12. Menjalankan django di heroku
+### 13. Menjalankan django di heroku
 bangkitkan dyno untuk mengaktifkan server
 ```
 heroku ps:scale web=1
@@ -189,7 +189,7 @@ maka akan membuka browser dan menjalankan aplikasi django, untuk menuju admin ta
 heroku logs --tail
 ```
 
-### 13. Menjalankan django di local
+### 14. Menjalankan django di local
 django dapat dijalankan juga di local, dengan perintah:
 ```
 heroku local web
