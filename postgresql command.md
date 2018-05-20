@@ -31,3 +31,8 @@ insert into sentbox (date,time,text,id_message,number) values (CURRENT_DATE, CUR
 - **sentbox** adalah tabel
 - **CURRENT_DATE** adalah tanggal sekarang, **2018-11-19**
 - **CURRENT_TIME** adalah jam sekarang, **20:18:12...**
+
+## update data
+```
+UPDATE auth_user SET password='djangoframework' WHERE username='pwcahyo';
+```
