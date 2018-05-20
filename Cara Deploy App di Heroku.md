@@ -37,7 +37,7 @@ Copy
 ```
 **postgresql-flexible-35614** perlu dicatat, digunakan untuk konfigurasi database distep selanjutnya
 
-### 5. Ciptakan satu file dengan nama **Pipfile** didalam *root* app
+### 5. Ciptakan satu file dengan nama `Pipfile` didalam *root* app
 file ini digunakan untuk mendefinisikan requirement yang dibutuhkan pada server heroku nantinya, isi **Pipfile** adalah sebagai berikut:
 ```
 [[source]]
@@ -56,7 +56,7 @@ whitenoise = "*"
 python_version = "3.6"
 ```
 
-### 6. Ciptakan satu file dengan nama **Procfile** didalam *root* app
+### 6. Ciptakan satu file dengan nama `Procfile` didalam *root* app
 file ini nantinya digunakan untuk menjalankan module app yang dideploy didalam server heroku, isi file **Procfile** adalah sebagai berikut
 ```
 web: gunicorn smsgateway.wsgi --log-file -
@@ -86,7 +86,7 @@ tambahkan baris dibawah ini kedalam `.bash_profile` **apabila menggunakan mac os
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
-apabila sudah maka jangan lupa untuk ulangi [perintah ini](#5.-Menciptakan-virtual-environtment-untuk-upload-kedalam-heroku)
+apabila sudah maka jangan lupa untuk ulangi [perintah ini](#8.-Menciptakan-virtual-environtment-untuk-upload-kedalam-heroku)
 kemudian jalankan **pipenv shell**
 ```
 pipenv shell
