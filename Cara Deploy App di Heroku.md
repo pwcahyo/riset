@@ -86,7 +86,7 @@ tambahkan baris dibawah ini kedalam `.bash_profile` **apabila menggunakan mac os
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
-apabila sudah maka jangan lupa untuk ulangi [perintah ini](#8.-Menciptakan-virtual-environtment-untuk-upload-kedalam-heroku)
+apabila sudah maka jangan lupa untuk ulangi [perintah ini](#8-Menciptakan-virtual-environtment-untuk-upload-kedalam-heroku)
 kemudian jalankan **pipenv shell**
 ```
 pipenv shell
@@ -141,7 +141,7 @@ error tersebut dikarenakan belum ditambahkan *git remote* , maka tambahkan denga
 ```
 git remote add heroku https://git.heroku.com/sheltered-mountain-39240.git
 ```
-pastikan **sheltered-mountain-39240** adalah nama repository app didalam heroku, kemudian jangan lupa [ulangi](#10. Push seluruh file aplikasi django yang sudah dibuat ke dalam heroku)
+pastikan **sheltered-mountain-39240** adalah nama repository app didalam heroku, kemudian jangan lupa [ulangi](#10-push-seluruh-file-aplikasi-django-yang-sudah-dibuat-ke-dalam-heroku)
 
 ### 11. Migrasi database postgresql
 Siapkan database untuk dimigrasi, dengan menjalankan perintah berikut
