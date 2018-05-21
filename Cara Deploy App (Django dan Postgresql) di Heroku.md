@@ -190,9 +190,20 @@ maka akan membuka browser dan menjalankan aplikasi django, untuk menuju admin ta
 heroku logs --tail
 ```
 
-### 14. Menjalankan django di local
-django dapat dijalankan juga di local, dengan perintah:
+### 14. Menjalankan django di local tanpa koneksi internet
+agar django dapat dijalankan di local jangan lupa untuk installing `dj-database-url` dan `whitenoise`:
+```
+pip install dj-database-url
+pip install whitenoise
+```
+kemudian untuk menjalankan di local tanpa koneksi internet dapat dilakukan dengan perintah:
+```
+python manage.py runserver
+```
+kemudian buka url **http://0.0.0.0:5000/admin**
+
+### 15. Menjalankan django di local dengan koneksi internet
+apabila terkoneksi internet kemudian akan menjalankan django yang berada di local ~~bukan diheroku~~, maka dapat menggunakan perintah
 ```
 heroku local web
 ```
-kemudian jalankan pada host **http://0.0.0.0:5000/admin**
