@@ -200,7 +200,7 @@ kemudian untuk menjalankan di local tanpa koneksi internet dapat dilakukan denga
 ```
 python manage.py runserver
 ```
-kemudian buka url **http://0.0.0.0:5000/admin**
+kemudian buka url **http://127.0.0.1:8000/admin**
 
 ### 15. Menjalankan django di local dengan koneksi internet
 apabila terkoneksi internet kemudian akan menjalankan django yang berada di local ~~bukan diheroku~~, maka dapat menggunakan perintah
